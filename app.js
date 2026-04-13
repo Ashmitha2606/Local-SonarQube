@@ -1,9 +1,11 @@
 function login(user, password) {
-    if(user === "admin") {
-        console.log("Login")
+    if (user === "admin" && password === "123") {
+        console.log("Login successful")
+        return true
+    } else {
+        console.log("Invalid credentials")
+        return false
     }
-
-    let x = 20
 }
 
 login("admin", "123")
