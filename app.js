@@ -1,21 +1,12 @@
 function login(user, password) {
-    if(user == "admin" && password == "123456") {
-        console.log("Login successful")
+    if(user == "admin") {
+        console.log("Login")
     }
-}
 
-function calculate(a, b) {
-    var result = a + b
-    return result
-}
+    eval("console.log('unsafe')")
 
-function unusedFunction() {
     var x = 10
+    var x = 20
 }
 
-var data = "Hello"
-if(data == "Hello"){
-    console.log("Hi")
-}
-
-eval("console.log('Dangerous code execution')")
+login("admin", "123")
